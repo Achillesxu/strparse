@@ -63,6 +63,8 @@ func main() {
 		_ = countCommand.Parse(os.Args[2:])
 	default:
 		flag.PrintDefaults()
+		listCommand.PrintDefaults()
+		countCommand.PrintDefaults()
 		os.Exit(1)
 	}
 
